@@ -18,9 +18,10 @@
 from fractions import Fraction
 from functools import reduce
 import operator
+from typing import List, Tuple
 
 
-def is_curious(numerator, denominator):
+def is_curious(numerator: int, denominator: int) -> bool:
     """
     Returns True iff the fraction (`numerator`/`denominator`) is 'curious'
 
@@ -29,7 +30,7 @@ def is_curious(numerator, denominator):
         denominator (int): Double-digit natural number, greater than `numerator`
 
     Returns:
-        True iff (`numerator`/`denominator`) is 'curious'
+        (bool): True iff (`numerator`/`denominator`) is 'curious'
 
     Raises:
         AssertError: if incorrect args are given
@@ -59,7 +60,7 @@ def is_curious(numerator, denominator):
     return False
 
 
-def get_lcd(fractions):
+def get_lcd(fractions: List[Tuple[int, int]]) -> int:
     """
     Returns the LCD of the product of `fractions`
 
