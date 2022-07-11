@@ -1,6 +1,7 @@
 # Project Euler
 
 ## Problem 33 - Digit Cancelling Fractions
+
 The fraction `49/98` is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that `49/98 = 4/8`, which is correct, is obtained by cancelling the 9s.
 
 We shall consider fractions like, `30/50 = 3/5`, to be trivial examples.
